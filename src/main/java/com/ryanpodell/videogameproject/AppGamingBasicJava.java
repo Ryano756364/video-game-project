@@ -10,8 +10,8 @@ public class AppGamingBasicJava {
 
         //var game = new MarioGame();
         //var game = new SuperContraGame();
-        var game = new PacmanGame();
-        var gameRunner = new GameRunner(game);
+        var game = new PacmanGame();  //object
+        var gameRunner = new GameRunner(game);  //object + wiring of dependencies (game is dependency of GameRunner or injected in)
         gameRunner.run();
     }
 }
