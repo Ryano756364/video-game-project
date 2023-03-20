@@ -30,7 +30,19 @@ public class HelloWorldConfiguration {
         return person;
     }
 
+    //creating relationships with existing Spring beans
     @Bean
+    public Person person2MethodCall(){
+        var person = new Person(name(), age());
+        return person;
+    }
+    @Bean
+    public Person person3Parameters(String name, int age){
+        var person = new Person(name, age);
+        return person;
+    }
+
+    @Bean(name = "address2")  //custom naming of Bean
     public Address address(){
         var address = new Address("123 Vine Street", "Columbus");
         return address;

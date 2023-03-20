@@ -16,6 +16,11 @@ public class App02HelloWorldSpring {
         System.out.println(context.getBean("name"));
         System.out.println(context.getBean("age"));
         System.out.println(context.getBean("person"));  //automatically uses toString method of record class
-        System.out.println(context.getBean("address"));
+        System.out.println(context.getBean("address2"));
+        System.out.println(context.getBean(Address.class));  //can also do this as well
+        //so once Spring manages a Bean, you can either use the name or the type of the bean to retrieve it
+
+        System.out.println(context.getBean("person2MethodCall"));
+        System.out.println(context.getBean("person3Parameters"));
     }
 }
