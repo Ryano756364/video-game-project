@@ -24,3 +24,11 @@ public class App02HelloWorldSpring {
         System.out.println(context.getBean("person3Parameters"));
     }
 }
+
+// Spring Container - manages spring beans & their lifecycle
+// Two popular types -> 1) bean factory -> basic spring container
+// 2) -> application context -> advanced spring container with enterprise-specific features
+// application context -> recommended for web applications, web services, REST API, and microservices
+// pojo -> plain old java object
+// java bean -> has public no arg constructor, java provides one -> has getters and setters -> implements Serializable (not too popular anymore)
+// spring bean -> anything managed by Spring framework
