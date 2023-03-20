@@ -14,5 +14,8 @@ public class App02HelloWorldSpring {
         //create the name method with the @Bean annotation
         //now we are retrieving Beans managed by Spring
         System.out.println(context.getBean("name"));
+        System.out.println(context.getBean("age"));
+        System.out.println(context.getBean("person"));  //automatically uses toString method of record class
+        System.out.println(context.getBean("address"));
     }
 }
